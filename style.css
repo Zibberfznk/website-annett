@@ -110,7 +110,7 @@ input, textarea, button { font-family: inherit; }
 .hilfe-icon--teal { background: #DBE8E5; color: #2E5F61; }
 .hilfe-icon--rose { background: #F0DBD4; color: #B27A71; }
 .hilfe-icon--blue { background: #DCE7EF; color: #416E85; }
-.hilfe-card-title { margin: 0 0 12px; font-family: 'Cormorant Garamond',serif; font-size: 1.7rem; font-weight: 600; }
+.hilfe-card-title { margin: 0 0 12px; font-family: 'Cormorant Garamond',serif; font-size: clamp(1.4rem,2.2vw,1.7rem); line-height: 1.25; font-weight: 600; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
 .hilfe-card-title--gold { color: #9C7723; }
 .hilfe-card-title--teal { color: #2E5F61; }
 .hilfe-card-title--rose { color: #9F5F56; }
@@ -179,3 +179,4 @@ input, textarea, button { font-family: inherit; }
   .nav--open .nav-links { max-height: 320px; margin-top: 6px; opacity: 1; pointer-events: auto; }
   .nav--open .nav-cta { max-height: 80px; margin: 10px 0 4px; opacity: 1; pointer-events: auto; }
 }
+.hilfe-cta { display: flex; justify-content: center; margin-top: 48px; }
