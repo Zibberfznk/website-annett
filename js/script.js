@@ -1,4 +1,3 @@
-// Sticky nav: reveal once the user scrolls past the hero area.
 const nav = document.querySelector('.nav');
 if (nav) {
   const onScroll = () => {
@@ -8,7 +7,6 @@ if (nav) {
   onScroll();
 }
 
-// Mobile nav: toggle the folded dropdown menu open/closed.
 const navToggle = document.querySelector('.nav-toggle');
 if (nav && navToggle) {
   const setMenu = (open) => {
@@ -19,13 +17,11 @@ if (nav && navToggle) {
   navToggle.addEventListener('click', () => {
     setMenu(!nav.classList.contains('nav--open'));
   });
-  // Collapse the menu once a destination is chosen.
   nav.querySelectorAll('.nav-link, .nav-cta').forEach((link) => {
     link.addEventListener('click', () => setMenu(false));
   });
 }
 
-// Contact form: submit to Web3Forms via fetch so the visitor stays on the page.
 const form = document.querySelector('.kontakt-form');
 if (form) {
   const status = form.querySelector('.form-status');
