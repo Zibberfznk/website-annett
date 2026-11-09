@@ -2,6 +2,6 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 rsync -avz --delete \
-  --exclude '.git' --exclude '.gitignore' --exclude '.DS_Store' \
+  --exclude '.git' --exclude '.gitignore' --exclude '.claude' --exclude '.DS_Store' \
   --exclude 'README.md' --exclude 'deploy.sh' \
   ./ limacity:kaplow-beratung/
